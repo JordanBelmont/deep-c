@@ -9,21 +9,19 @@ const imageList = [
 let imageIndex = 0
 
 function nextImage() {
+   // Automatically move to next image
    imageIndex++
-
    const tmpImage = new Image();
-
+   // Cycle through images
    if (imageIndex >= imageList.length) {
       imageIndex = 0
    }
-   // set the src of the image to the url of the current image in imageList
+   // Load next image before it shows
    tmpImage.src = imageList[imageIndex]
-
    tmpImage.addEventListener('load', () => {
       image.src = tmpImage.src
    })
-
-   console.log(tmpImage);
 }
 
+// 8-second interval before image changes
 window.setInterval(nextImage, 8000)

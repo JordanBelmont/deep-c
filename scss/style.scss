@@ -40,8 +40,35 @@ h1 {
    letter-spacing: 2rem;
 }
 
+h5 {
+   letter-spacing: 0.2rem;
+}
+
 sup {
    letter-spacing: 0.2rem;
+}
+
+.featured {
+   position: relative;
+   isolation: isolate;
+}
+
+.featured::after {
+   background-image: url(../images/rokos-basilisk.png);
+   background-size: cover;
+   content: '';
+   position: absolute;
+   opacity: .3;
+   inset: 0;
+   z-index: -1;
+}
+
+form div button:hover {
+   background-color: #f3c333 !important;
+}
+
+.navbar-toggler {
+   background-color: #f3c333
 }
 
 .quote {

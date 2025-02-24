@@ -70,7 +70,8 @@
                      <li class="nav-item ms-4">
                         <button class="btn btn-info p-1">
                            <a href="#details"
-                              class="nav-link fw-semibold fs-5">
+                              class="nav-link text-primary fw-semibold fs-5"
+                              id="login">
                               Login / Signup
                            </a>
                         </button>
@@ -80,17 +81,11 @@
             </div>
          </nav>
       </div>
-      <!-- Title -->
-      <div class="text-center mt-5">
-         <h1 class="text-light d-inline mx-5">
-            [ D E E P - C ]
-         </h1>
-      </div>
-      <div class="text-center mt-5">
-         <h3 class="text-center text-light d-inline mx-5">
-            A Database of the Macabre
-         </h3>
-      </div>
+   </div>
+   <!-- Hero -->
+   <div class="img-fluid text-center mx-auto w-75 mt-5 border border-info hero-container">
+      <img src="./images/rokos-basilisk.png"
+           class="hero" />
    </div>
 
    <div class="mx-auto w-75 mt-5">
@@ -99,7 +94,7 @@
          <div class="w-20">
             <div class="card bg-success text-secondary border-info rounded-0">
                <div class="title">
-                  <h5 class="text-test text-primary fw-bold text-uppercase">
+                  <h5 class="banner text-primary fw-bold text-uppercase">
                      [ Directory ]
                   </h5>
                </div>
@@ -241,14 +236,14 @@
                <!-- News -->
                <article class="card bg-success text-secondary border-info rounded-0">
                   <div class="title">
-                     <h5 class="text-test text-primary fw-bold text-uppercase">
+                     <h5 class="banner text-primary fw-bold text-uppercase">
                         [ Deep News ]
                      </h5>
                   </div>
                   <div class="card-body">
-                     <img src="https://randomuser.me/api/portraits/men/75.jpg"
+                     <img src="./images/news.png"
                           alt=""
-                          class="img-fluid float-end d-inline m-2" />
+                          class="img-fluid float-end d-inline m-2 border border-secondary" />
                      <p class="text-light d-inline">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                         Perspiciatis harum,
@@ -269,28 +264,6 @@
                         excepturi magnam labore? Corporis, nobis obcaecati. Expedita blanditiis explicabo facilis
                         fugiat, eaque magnam quam, ad ullam rerum id animi placeat, illum perspiciatis dignissimos?
                         Repellendus nam quae aperiam nobis. Consequatur impedit dolorum dolore officiis!
-                     </p>
-                  </div>
-               </article>
-               <!-- Featured -->
-               <article class="card bg-success text-secondary border-info rounded-0">
-                  <div class="title">
-                     <h5 class="text-test text-primary fw-bold text-uppercase">
-                        [ Featured Article ]
-                     </h5>
-                  </div>
-                  <div class="card-body featured">
-                     <p class="text-light">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis
-                        harum,
-                        est maiores animi
-                        consectetur a pariatur eum aliquam quasi nam sapiente molestias, excepturi accusamus aliquid
-                        asperiores necessitatibus minus numquam qui! Perferendis doloremque asperiores a deserunt
-                        dolore
-                        dicta mollitia ipsa id illo temporibus nobis adipisci eligendi distinctio error vitae quod
-                        impedit
-                        quaerat magnam quis, dolor omnis. Optio facere rerum ipsam quos, atque ex amet, molestias
-                        aut,
                         <br /><br />
                         eius
                         maxime excepturi magnam labore? Corporis, nobis obcaecati. Expedita blanditiis explicabo
@@ -303,41 +276,100 @@
                      </p>
                   </div>
                </article>
+               <!-- Featured -->
+               <article class="card bg-success text-secondary border-info rounded-0">
+                  <div class="title">
+                     <h5 class="banner text-primary fw-bold text-uppercase">
+                        [ Featured Article ]
+                     </h5>
+                  </div>
+                  <div class="card-body featured">
+                     <a href="#">
+                        <p class="text-light">
+                           Roko's Basilisk is a theory that posits the idea that an artificial superintelligence (AI)
+                           could
+                           be motivated to
+                           systematically punish anyone who had heard of it before its existence, but did not
+                           contribute
+                           to
+                           its development.
+                           <br /><br />
+                           The theory suggests that if humanity were to develop a self-learning AI, we would reach
+                           what
+                           is
+                           known as a singularity:
+                           a point in time where the AI's intelligence far exceeds our own and we would be in a
+                           situation
+                           where its growth would
+                           become both uncontrollable and irreversible. If the AI were given a benevolent task, such
+                           as
+                           preventing existential risk
+                           or simply improving humanity, it could choose to make decisions that seem
+                           counterintuitive,
+                           or
+                           that we simply couldn't
+                           understand in order to achieve its goal as efficiently as possible. In its infinite
+                           wisdom,
+                           the
+                           AI could realise that in
+                           order to reach its goal in the most optimal way, it would need to have been created
+                           sooner.
+                           <br /><br />
+                           A godlike-superintelligence would have no problem accessing every bit of information ever
+                           uploaded onto the internet,
+                           and from this wealth of knowledge, could sufficiently create an infinite number of
+                           simulated
+                           realities, each containing
+                           an exact replica of everyone on the planet in order to confidently assess whether or not
+                           an
+                           individual would have aided
+                           in its creation based on their emotions, memories and past decisions.
+                        </p>
+                     </a>
+                  </div>
+               </article>
                <div class="row">
                   <div class="container d-flex flex-row justify-content-between gap-5">
                      <!-- Podcast -->
                      <article class="card bg-dark text-secondary border-info rounded-0 w-50">
                         <div class="title">
-                           <h5 class="text-test text-primary fw-bold text-uppercase">
+                           <h5 class="banner text-primary fw-bold text-uppercase">
                               [ Podcast ]
                            </h5>
                         </div>
-                        <div class="card-body p-0 d-flex justify-content-center">
-                           <img src="./images/podcast.png"
-                                alt=""
-                                id="podcast"
-                                class="w-100" />
+                        <div class="card-body p-0">
+                           <a href="#"
+                              class="d-flex justify-content-center">
+                              <img src="./images/podcast.png"
+                                   alt=""
+                                   id="podcast"
+                                   class="w-100" />
+                           </a>
                         </div>
                      </article>
                      <!-- Download -->
                      <article class="card bg-success border-info rounded-0 w-50">
                         <div class="title">
-                           <h5 class="text-test text-primary fw-bold text-uppercase">
+                           <h5 class="banner text-primary fw-bold text-uppercase">
                               [ Download ]
                            </h5>
                         </div>
                         <div class="card-body text-center">
-                           <h5 class="text-test text-light text-center text-uppercase mb-3">
+                           <h5 class="text-light text-center text-uppercase mb-3">
                               Download The App
                            </h5>
-                           <img src="./images/download.png"
-                                alt=""
-                                id="download"
-                                class="img-fluid w-70 mb-2" />
-                           <img src="./images/app-store.png"
-                                alt=""
-                                id="download"
-                                class="img-fluid w-35" />
+                           <a href="#">
+                              <img src="./images/download.png"
+                                   alt=""
+                                   id="download"
+                                   class="img-fluid w-70 mb-2" />
+                           </a>
+                           <a href="#">
+                              <img src="./images/app-store.png"
+                                   alt=""
+                                   id="download"
+                                   class="img-fluid w-35" />
+                           </a>
                         </div>
                      </article>
                   </div>
@@ -345,13 +377,13 @@
                <!-- Newsletter -->
                <article class="card bg-success text-secondary border-info rounded-0">
                   <div class="title">
-                     <h5 class="text-test text-primary fw-bold text-uppercase">
+                     <h5 class="banner text-primary fw-bold text-uppercase">
                         [ Newsletter ]
                      </h5>
                   </div>
                   <div class="card-body">
                      <form class="text-light">
-                        <h5 class="text-test text-center text-uppercase mb-3">
+                        <h5 class="text-center text-uppercase mb-3">
                            Stay Informed
                         </h5>
                         <p class="text-light text-center">
@@ -385,39 +417,34 @@
                         </div>
                         <div class="text-center">
                            <button type="submit"
-                                   class="btn btn-light">Submit
+                                   class="btn btn-info fw-bold text-primary">Submit
                            </button>
                         </div>
                      </form>
                   </div>
                </article>
-               <!-- Visitor Count -->
-               <h3 class="text-center text-light d-inline mx-5">
-                  Visitor Count
-               </h3>
             </div>
          </div>
          <!-- Sponsors -->
          <div class="w-20">
             <div class="card bg-success text-secondary border-info rounded-0">
                <div class="title">
-                  <h5 class="text-test text-primary fw-bold text-uppercase">
+                  <h5 class="banner text-primary fw-bold text-uppercase">
                      [ Sponsors ]
                   </h5>
                </div>
                <div class="card-body">
-                  <img src="./images/red-room-resorts.png"
-                       alt=""
-                       id="advert"
-                       class="img-fluid border border-secondary" />
+                  <a href="#">
+                     <img src="./images/samedi-solutions.png"
+                          alt=""
+                          id="advert"
+                          class="img-fluid border border-secondary" />
+                  </a>
                </div>
             </div>
          </div>
       </div>
    </div>
-   <br class="py-5" />
-   <br class="py-5" />
-   <br class="py-5" />
    <br class="py-5" />
    <br class="py-5" />
    <br class="py-5" />
@@ -437,7 +464,7 @@
                   <li class="nav-item">
                      <a href="#details"
                         class="nav-link link-light">
-                        Details
+                        Privacy Policy
                      </a>
                   </li>
                   <li class="nav-item">
@@ -450,11 +477,21 @@
             </div>
             <div class="col-md-4">
                <div class="social-icons d-flex justify-content-center gap-4 fs-4">
-                  <i class="fab fa-facebook fa-2x"></i>
-                  <i class="fab fa-x-twitter fa-2x"></i>
-                  <i class="fab fa-discord fa-2x"></i>
-                  <i class="fab fa-instagram fa-2x"></i>
-                  <i class="fab fa-linkedin fa-2x"></i>
+                  <a href="#">
+                     <i class="fab fa-facebook fa-2x"></i>
+                  </a>
+                  <a href="#">
+                     <i class="fab fa-x-twitter fa-2x"></i>
+                  </a>
+                  <a href="#">
+                     <i class="fab fa-discord fa-2x"></i>
+                  </a>
+                  <a href="#">
+                     <i class="fab fa-instagram fa-2x"></i>
+                  </a>
+                  <a href="#">
+                     <i class="fab fa-linkedin fa-2x"></i>
+                  </a>
                </div>
             </div>
             <div class="col-md-4">

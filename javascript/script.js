@@ -25,3 +25,15 @@ function nextImage() {
 
 // 8-second interval before image changes
 window.setInterval(nextImage, 8000)
+
+// Sidebar menu
+document.addEventListener('DOMContentLoaded', () => {
+   let category = document.querySelectorAll('.category-item a');
+
+   category.forEach(categoryItem => {
+      categoryItem.addEventListener('click', () => {
+         const subCategoryList = categoryItem.nextElementSibling;
+         subCategoryList.classList.toggle('active');
+      });
+   });
+});

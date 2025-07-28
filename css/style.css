@@ -16,6 +16,11 @@
   background: #f3c333;
 }
 
+hr {
+  width: 75%;
+  height: 0.1rem;
+}
+
 h1 {
   letter-spacing: 2rem;
 }
@@ -54,6 +59,19 @@ sup {
 .quote {
   font-family: Rajdhani;
   letter-spacing: 0.2rem;
+}
+
+.category-item a {
+  cursor: pointer;
+}
+
+.subcategory-list {
+  display: none;
+  list-style: none;
+}
+
+.active {
+  display: block;
 }
 
 li a:hover {
